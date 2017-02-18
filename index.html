@@ -8,6 +8,7 @@
 https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script type="text/javascript" src="index.js"></script>
 </head>
 <body>
 <div id="navbar" class="ui large black top fixed inverted menu">
@@ -29,25 +30,22 @@ https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.js"></script>
       <i class="translate icon"></i>Animations For Fun</h2>
     </div>
 </div>
-<!-- <div id="elementContainer">
-	<div id="element"></div>
-</div> -->
 <div id="grid" class="ui center aligned grid">
-	<div id="button" class="ui blue button">Animate</div>
-	<i id="move" class="huge blue bomb icon"></i>
+	<div class="two wide column">
+		<h3>Shake</h3>
+		<div id="button1" class="ui teal button">Animate</div><br/><br/>
+		<i id="move1" class="huge blue bomb icon"></i>
+	</div>	
+	<div class="two wide column">
+		<h3>Bounce</h3>
+		<div id="button2" class="ui teal button">Animate</div><br/><br/>
+		<i id="move2" class="huge blue bomb icon"></i>
+	</div>	
+	<div class="two wide column">
+		<h3>Flash</h3>
+		<div id="button3" class="ui teal button">Animate</div><br/><br/>
+		<i id="move3" class="huge blue bomb icon"></i>
+	</div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script>
-	$(function() {
-		var animationName = 'animated shake';
-		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-		$('div.ui.button').on('click',function() {
-			$('i.huge').addClass(animationName).one(animationEnd,function() {
-				$(this).removeClass(animationName);
-			});
-		});
-
-	});
-</script>
 </body>
 </html>
