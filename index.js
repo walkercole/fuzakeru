@@ -28,3 +28,43 @@ $(function() {
 	});
 
 });	
+$(function() {
+	var animationName = 'animated pulse';
+	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	$('div.ui#button4').on('click',function() {
+		$('i.huge#move4').addClass(animationName).one(animationEnd,function() {
+			$(this).removeClass(animationName);
+		});
+	});
+
+});	
+$(function() {
+	var animationName = 'animated rubberBand';
+	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	$('div.ui#button5').on('click',function() {
+		$('i.huge#move5').addClass(animationName).one(animationEnd,function() {
+			$(this).removeClass(animationName);
+		});
+	});
+
+});
+$(function() {
+	var animationName = 'animated headShake';
+	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	$('div.ui#button6').on('click',function() {
+		$('i.huge#move6').addClass(animationName).one(animationEnd,function() {
+			$(this).removeClass(animationName);
+		});
+	});
+
+});	
+$(function() {
+	var animationName = 'animated swing';
+	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	$('div.ui#button7').on('click',function() {
+		$('i.huge#move7').addClass(animationName).one(animationEnd,function() {
+			$(this).removeClass(animationName);
+		});
+	});
+
+});	
